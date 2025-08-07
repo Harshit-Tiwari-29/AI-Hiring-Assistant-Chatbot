@@ -10,7 +10,7 @@ import csv
 
 # Page Configuration
 st.set_page_config(
-    page_title="TalentScout AI",
+    page_title="AI Hiring Assistant",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -46,7 +46,7 @@ def save_user_history(email, messages_to_save):
 
 TRANSLATIONS = {
     'en': {
-        'page_title': "TalentScout AI Assistant", 'header': "TalentScout AI Assistant", 'controls': "⚙️ Controls", 'api_key_prompt': "### Enter API Key",
+        'page_title': "AI Hiring Assistant", 'header': "AI Hiring Assistant", 'controls': "⚙️ Controls", 'api_key_prompt': "### Enter API Key",
         'api_key_input': "Enter your Groq API key", 'submit_key_button': "Submit Key", 'api_key_success': "API key accepted!", 'api_key_warning': "Please enter your API key.",
         'api_key_set': "API key is set.", 'candidate_info_header': "📝 Candidate Information", 'no_info_collected': "No information collected yet.",
         'user_response_placeholder': "Your response...", 'thinking': "Thinking...", 'error_message': "An error occurred: {e}. Please check your API Key or try again.",
@@ -55,7 +55,7 @@ TRANSLATIONS = {
         'final_message_with_questions': "Thank you! Your profile is complete. Here are a few technical questions based on your stack for you to think about:\n\n{questions}\n\nOur recruitment team will review your information and get in touch soon. Have a great day! ✅",
     },
     'es': {
-        'page_title': "Asistente de IA TalentScout", 'header': "Asistente de IA TalentScout", 'controls': "⚙️ Controles", 'api_key_prompt': "### Ingrese la Clave de API",
+        'page_title': "Asistente de Contratación IA", 'header': "Asistente de Contratación IA", 'controls': "⚙️ Controles", 'api_key_prompt': "### Ingrese la Clave de API",
         'api_key_input': "Ingrese su clave de API de Groq", 'submit_key_button': "Enviar Clave", 'api_key_success': "¡Clave de API aceptada!", 'api_key_warning': "Por favor ingrese su clave de API.",
         'api_key_set': "La clave de API está configurada.", 'candidate_info_header': "📝 Información del Candidato", 'no_info_collected': "Aún no se ha recopilado información.",
         'user_response_placeholder': "Tu respuesta...", 'thinking': "Pensando...", 'error_message': "Ocurrió un error: {e}. Por favor, verifique su clave de API.",
@@ -64,7 +64,7 @@ TRANSLATIONS = {
         'final_message_with_questions': "¡Gracias! Tu perfil está completo. Aquí tienes algunas preguntas técnicas basadas en tu stack para que pienses:\n\n{questions}\n\nNuestro equipo de reclutamiento revisará tu información y se pondrá en contacto pronto. ¡Que tengas un buen día! ✅",
     },
     'fr': {
-        'page_title': "Assistant IA TalentScout", 'header': "Assistant IA TalentScout", 'controls': "⚙️ Contrôles", 'api_key_prompt': "### Entrez la Clé API",
+        'page_title': "Assistant de Recrutement IA", 'header': "Assistant de Recrutement IA", 'controls': "⚙️ Contrôles", 'api_key_prompt': "### Entrez la Clé API",
         'api_key_input': "Entrez votre clé API Groq", 'submit_key_button': "Soumettre la Clé", 'api_key_success': "Clé API acceptée !", 'api_key_warning': "Veuillez entrer votre clé API.",
         'api_key_set': "La clé API est configurée.", 'candidate_info_header': "📝 Informations sur le Candidat", 'no_info_collected': "Aucune information collectée.",
         'user_response_placeholder': "Votre réponse...", 'thinking': "Réflexion...", 'error_message': "Une erreur est survenue: {e}. Veuillez vérifier votre clé API.",
@@ -252,3 +252,4 @@ elif st.session_state.conversation_stage == 'finalizing':
 
 elif st.session_state.conversation_stage == 'done':
     st.success("The screening process is complete. You may close this window.")
+
