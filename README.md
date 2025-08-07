@@ -1,9 +1,9 @@
 
-#  TalentScout AI: The AI Hiring Assistant
+#  The AI Hiring Assistant
 
-**TalentScout AI** is a sophisticated, multilingual chatbot designed to streamline the initial candidate screening process. Built with **Streamlit** and powered by the **Groq API** for high-speed language model inference, this AI assistant engages potential hires in natural conversations to collect essential information. It concludes by generating relevant technical questions based on their stated technology stack.
+**AI Hirirng Assistant** is a sophisticated, multilingual chatbot designed to streamline the initial candidate screening process. Built with **Streamlit** and powered by the **Groq API** for high-speed language model inference, this AI assistant engages potential hires in natural conversations to collect essential information. It concludes by generating relevant technical questions based on their stated technology stack.
 
-The entire application is contained within a single Python script: `final.py`.
+The entire application is contained within a single Python script: `app.py`.
 
 ---
 
@@ -84,7 +84,7 @@ GROQ_API_KEY="your_groq_api_key"
 To launch the app:
 
 ```bash
-streamlit run final.py
+streamlit run app.py
 ```
 
 - A browser tab will open with the chatbot interface.
